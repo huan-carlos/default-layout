@@ -1,0 +1,87 @@
+.carousel-inner,
+.carousel-item {
+  height: 87vh;
+}
+
+.carousel-caption > h5,
+.carousel-caption > p {
+  color: rgb(255, 255, 255);
+}
+
+.carousel-caption > h5 {
+  font-size: 10vh;
+}
+
+.carousel-caption > p {
+  font-size: 7vh;
+}
+
+.navbar-brand > img {
+  width: 40vh;
+  padding-left: 3vh;
+}
+
+.carousel-item > img {
+  filter: brightness(50%);
+  filter: blur(2);
+}
+
+.nav-link > img {
+  padding: 1.5vh;
+  height: 8vh;
+}
+
+a.nav-link {
+  font-size: 3.5vh;
+}
+
+.container {
+  padding-top: 8vh;
+  text-align: center;
+}
+
+.container > .row > .col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  font-size: 3.5vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+div#parceiros.container > div.row {
+  padding-top: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+div#parceiros.container > div.row > div.col > img.card-img-top {
+  padding-top: 1.5vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+}
+
+div#sobre.container > div.row > div.col {
+  padding-top: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+div#contato.container > a {
+  font-size: 3vh;
+
+}
+
+div#contato.container > iframe {
+  padding-top: 3vh;
+}

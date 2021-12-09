@@ -1,19 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Centrofarma - Distribuidora Farmacêutica</title>
+</head>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo-centrofarma.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#parceiros">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="/img/icon_facebook_dark.svg" alt="Página do Facebook">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="/img/icon_instagram_dark.svg" alt="Página do Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/carrocel-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Medicamentos para família toda</h5>
+                        <p>Temos medicamentos, suplementos, produtos e ortopédicos</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/carrocel-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Indústria com produtos de qualidade</h5>
+                        <p>Trabalhamos somente com indústrias regularizadas pela ANVISA</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/carrocel-4.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Equipe de vendedores engajados</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  </body>
+        <div id="sobre" class="container">
+            <div class="row">
+                <h1>Sobre</h1>
+                <div class="col">
+                    <div class="card">
+                        <img src="/img/atendente-farmacia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Atendimento às Farmácias</h5>
+                            <p class="card-text">Somos uma distribuidora farmacêutica que prioriza as boas relações com
+                                os clientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/img/indústria-farmaceutica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Melhores Produtos</h5>
+                            <p class="card-text">Sempre com indústrias parceiras, para ter a melhor qualidade em
+                                produtos curva A.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="/img/logistica.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Logística Ágil</h5>
+                            <p class="card-text">Gerencia de estoque otimizada e entrega rápida, a Centrofarma não deixa
+                                seu clientes na mão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="parceiros" class="container">
+            <h1>Indústrias Parceiras</h1>
+            <div class="row">
+                <div class="col">
+                    <img src="/img/logo indústria/cifarma.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="/img/logo indústria/kress.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="/img/logo indústria/ems.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="/img/logo indústria/multilab.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="/img/logo indústria/geolab.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="/img/logo indústria/nova_gen_logo.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="/img/logo indústria/airela.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <img src="/img/logo indústria/nuk.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div id="contato" class="container">
+            <h1>Contato</h1>
+
+            <a href="tel:+556332192800">Telefone Fixo: (63) 3219 - 2800</a><br>
+            <a href="mailto:recepcao@centrofarma.net">E-mail para Atendimento</a><br>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.1032440587983!2d-48.31898418620632!3d-10.253256592677788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b33f38bd7c937%3A0x60487f3ac9f08cc7!2sCENTROFARMA!5e0!3m2!1spt-BR!2sbr!4v1639016437234!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-3 mb-0 text-muted">© 2021 Centrofarma</p>
+            <ul class="nav col-md-5 justify-content-end">
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link px-2 text-muted">Sobre</a></li>
+                <li class="nav-item"><a href="#parceiros" class="nav-link px-2 text-muted">Parceiros</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link px-2 text-muted">Contato</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
